@@ -15,6 +15,8 @@ body {
   background: -moz-radial-gradient(#FAFAFA, #EAEAEA, #E5E5E5);
   background: -webkit-radial-gradient(#FAFAFA, #EAEAEA, #E5E5E5);
   background-color: #E5E5E5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html:-webkit-full-screen-ancestor,
@@ -23,7 +25,7 @@ html:-moz-full-screen-ancestor {
 }
 
 .reveal {
-  font-family: "Fira Sans", Helvetica, sans-serif;
+  font-family: 'freight-sans-pro', Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
   color: #333;
@@ -50,18 +52,21 @@ html:-moz-full-screen-ancestor {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "Ubuntu", Helvetica, sans-serif;
+  font-family: 'Tungsten Narrow A','Tungsten Narrow B',sans-serif;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: normal;
   text-shadow: none;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  text-transform: uppercase; }
 
 .reveal h1 {
-  font-size: 1.9em; }
+  font-size: 2.5em;
+  line-height: 0.9;
+  margin-bottom: 0; }
 
 .reveal h2 {
-  font-size: 1.6em; }
+  font-size: 2em; }
 
 .reveal h3 {
   font-size: 1.3em; }
@@ -71,6 +76,20 @@ html:-moz-full-screen-ancestor {
 
 .reveal h1 {
   text-shadow: none; }
+
+.talk-title-impero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.start-title {
+  font-size: 145px;
+  line-height: 115px;
+  text-align: left;
+  display: inline-block;
+  margin-top: -70px;
+}
 
 /*********************************************
  * OTHER
@@ -300,6 +319,10 @@ html:-moz-full-screen-ancestor {
   background: #111;
 }
 
+.state--bg-dark h1, .state--bg-dark h2, .state--bg-dark p {
+  color: #fff;
+}
+
 .state--bg-blue body {
   background: #30D8FC;
 }
@@ -317,7 +340,7 @@ html:-moz-full-screen-ancestor {
 [data-background-video] li,
 [data-background-video] p {
   color: #FAFAFA;
-  text-shadow: 1px 1px 2px #333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 [data-background].dark-text h1,
@@ -394,7 +417,7 @@ body:not(.aframe-inspector-opened) .toggle-edit {
 .slide__title h1,
 .slide__title h2,
 .slide__title p {
-  padding: 15px 30px;
+  padding: 0 30px;
 }
 
 .slide__title .talk-title {

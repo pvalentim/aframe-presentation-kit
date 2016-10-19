@@ -1,103 +1,68 @@
+<!-- .slide: class="slide__title" data-background-video="media/video/crown.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
+<div class="talk-title talk-title-impero">
+<h1 class="start-title">Fame<br>& GLORY</h1>
+</div>
+
+<!-- NOTES -->
+- Introduce yourself
+- Introduce Impero
+
+------
+
+Welcome to Impero
+
+<!-- NOTES -->
+- We're a digital creative agency
+- Our dev team of 4 people
+- Do everything in JS (Frontend - Node)
+
+---
+
+<img data-src="media/img/gooseisland.png">
+
+<!-- NOTES -->
+- Massive thanks to our sponsor!
+
+------
+
+<!-- .slide: class="slide__title" data-state="state--bg-dark" data-background-video="media/video/dog.mp4" -->
+
+<!-- NOTES -->
+- Pass it on to Pedro
+---
+
+Pedro Valentim
+
+---
+
+@pvalentim
+
+---
+
+FrontPage -> XHTML -> Flash -> AS2 -> AS3<br> -> HTML/JS -> Canvas -> WebGL
+
+------
+
 <!-- .slide: class="slide__title" data-background-video="media/video/aframe-logo.mp4" data-background-video-loop="true" data-state="state--bg-blue" -->
 
 <div class="talk-title">
   <h1>A-Frame</h1>
   <h2>Building VR on the Web</h2>
   <p class="talk-info">
-    @you | mozvr.com | aframe.io
+    @pvalentim | weareimpero.com
   </p>
 </div>
 
 <!-- NOTES -->
-- Introduce yourself
+
 - Goal: bring high-performance VR to the Web, creating an open/connected VR platform
 - WebVR, why we need VR on the Web, and how to build WebVR experiences
 
 ------
 
-# Virtual Reality
-
-<!-- .slide: data-background-video="media/video/virtualreality.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
-
-<!-- NOTES -->
-- Ask how many have tried VR.
-- Virtual reality is a technology platform that transports you to realistic, interactive, immersive 3D environments
-- It's the next platform, will change how we work + play + communicate digitally, face of society
-
----
-
-# Fun!
-
-<!-- .slide: data-background="media/img/vrshooting.jpg" data-state="state--bg-dark" -->
-
-<!-- NOTES -->
-- Tell interested stories about your experiences with VR.
-
----
-
-<div class="image-row">
-  <div><img data-src="media/img/google-cardboard.png"></div>
-  <div><img data-src="media/img/google-daydream.png"></div>
-  <div><img data-src="media/img/samsung-gearvr.png"></div>
-</div>
-
-<div class="image-row">
-  <div><img data-src="media/img/oculus-rift.png"></div>
-  <div><img data-src="media/img/playstation-vr.png"></div>
-  <div><img data-src="media/img/htc-vive.png"></div>
-</div>
-
-<!-- NOTES -->
-- Backed by the largest corporations in the world, everyone wants in
-- Range from cheap to expensive, tethered and untethered, controllers, tracking
-- HTC Vive with Steam currently offers the most compelling experiences, but never know
-- See a lot of different devices, systems, platforms competing against each other...
-
----
-
-## Friction of VR Ecosystems
-
-<div class="captioned-image-row">
-  <div>
-    <img data-src="media/img/gatekeeper.png">
-    <i>Gatekeepers</i>
-  </div>
-  <div>
-    <img data-src="media/img/downloads-installs.png">
-    <i>Installs</i>
-  </div>
-  <div>
-    <img data-src="media/img/closed-door.png">
-    <i>Closed</i>
-  </div>
-</div>
-
-<!-- NOTES -->
-- App stores and corporations control distribution: can take down or block content
-- Downloads / installs are a barrier to consumption: small business pages
-- Closed ecosystem: proprietary engines, steep learning curves, siloed experiences, fragmentation
-- We want VR to be successful, so we want a platform without these points of friction. The answer is WebVR...
-
-------
-
 # WebVR
 
-An open virtual reality platform with the advantages of **the Web**
-
-<div class="captioned-image-row">
-  <div>
-    <img data-src="media/img/web-is-open.png">
-    <i>Open</i>
-  </div>
-  <div>
-    <img data-src="media/img/web-is-connected.png">
-    <i>Connected</i>
-  </div>
-  <div>
-    <img data-src="media/img/web-is-instant.png">
-    <i>Instant</i>
-  </div>
-</div>
+An open virtual reality platform<br> with the advantages of **the Web**
 
 <!-- NOTES -->
 WebVR is...virtual reality in the browser, powered by the Internet
@@ -121,8 +86,6 @@ Transition:
 - Get involved
 
 ---
-
-<img class="stretch" data-src="media/img/webvr.png">
 
 Browser APIs that enable WebGL rendering to headsets and access to VR
 sensors
@@ -172,7 +135,7 @@ Not just a specification, it's implemented...
 
 <!-- .slide: data-background-video="media/video/roomscale.mp4" data-state="state--bg-dark" -->
 
-## The Web is Ready for VR
+## Where to start?
 
 <!-- NOTES -->
 - Today, walk in web page and reach out with your hands
@@ -183,7 +146,7 @@ Not just a specification, it's implemented...
 
 ---
 
-## Metaverse
+window.giveMeSomeVr()
 
 <!-- .slide: data-background="media/img/metaverse.png" -->
 
@@ -196,7 +159,7 @@ Not just a specification, it's implemented...
 
 ---
 
-Too hard to create WebVR experiences...
+Not easy to create WebVR experiences
 
 ---
 
@@ -320,21 +283,7 @@ A declarative framework for building virtual reality experiences on the Web
 
 ---
 
-## MagicaVoxel
-
-<!-- .slide: data-transition="slide-in none" -->
-
-<img data-src="media/img/magicavoxel.png">
-
-<!-- NOTES -->
-- Can create scenes with MagicaVoxel
-- Super easy tool, drop blocks like Minecraft
-- Then export to A-Frame
-- Everything in previous talk, works in A-Frame as well
-
----
-
-## MagicaVoxel
+## AFRAME Inspector
 
 <!-- .slide: data-transition="none" -->
 
@@ -343,26 +292,6 @@ A declarative framework for building virtual reality experiences on the Web
 <!-- NOTES -->
 - MagicaVoxel model in A-Frame, mostly a line of HTML
 - Show off the A-Frame Inspector by pressing `<ctrl> + <alt> + i`
-
----
-
-## MagicaVoxel
-
-<!-- .slide: data-transition="none" -->
-
-<div class="stretch" data-aframe-scene="scenes/pokemon.html"></div>
-
-<!-- NOTES -->
-- Remember to manipulate and open inspector on second display
-
----
-
-## tiny.cc/ningjs
-
-<div class="stretch" data-aframe-scene="scenes/multiuser.html"></div>
-
-<!-- NOTES -->
-- QR code was genius
 
 ---
 
@@ -377,7 +306,6 @@ A declarative framework for building virtual reality experiences on the Web
 <!-- NOTES -->
 - Handful elements that ship with A-Frame, but this is just the start
 - Pretty easy to get a WebVR scene up and running
-- Go back to the multiuser
 
 ---
 
@@ -388,17 +316,13 @@ A declarative framework for building virtual reality experiences on the Web
 
 ------
 
-# Entity-Component-System
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
+Entity-Component-System
 
 <!-- NOTES -->
 - Pattern popular in game development, used in game engines like Unity
 - All objects in scene are **entities** that inherently empty objects. Plug in
   **components** to attach appearance / behavior / functionality
 - Favors composition over inheritance
-- Minecraft analogy: all blocks are entities, mix-and-match components to
-  create different kinds of blocks (appearance, physics, behavior, sound, strength)
 - Some more examples...
 
 ---
@@ -407,7 +331,6 @@ A declarative framework for building virtual reality experiences on the Web
 
 <!-- NOTES -->
 - Additional analogies: smartphone, vehicle
-- AFAIK A-Frame first tool to make ECS declarative
 
 ---
 
@@ -561,7 +484,7 @@ AFRAME.registerComponent('my-component', {
 <!-- .element: class="stretch" -->
 
 ```html
-<a-box my-component="foo: #box; bar: 300""></a-box>
+<a-box my-component="foo: #box; bar: 300"></a-box>
 ```
 
 <!-- NOTES -->
@@ -600,11 +523,11 @@ AFRAME.registerComponent('my-component', {
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/github.png">
-    <i>60 contributors, 3000 Stargazers</i>
+    <i>76 contributors, 3700 Stargazers</i>
   </div>
   <div>
     <img data-src="media/img/slack.png">
-    <i>1400 members on Slack</i>
+    <i>1700 members on Slack</i>
   </div>
   <div>
     <img data-src="media/img/scene-collage-circle.png">
@@ -677,15 +600,9 @@ iStaging
 
 ------
 
-<!-- .slide: class="slide__questions" data-background="media/img/scene-collage.jpg" style="background-color: rgba(30, 30, 30, 0.3)" -->
+<!-- .slide: data-background-video="media/video/flag_optm.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
 
-# Help Invent the Future  <!-- .element: style="color: #FFF" -->
-
-- Try it out [aframe.io](https://aframe.io)
-- See what people have made [aframe.io/blog](https://aframe.io/blog)
-- Join us on Slack [aframevr-slack.herokuapp.com](https://aframevr-slack.herokuapp.com/)
-- Follow us [@aframevr](https://twitter.com/aframevr)
-- Contribute on [github.com/aframevr/aframe](https://github.com/aframevr/aframe)
+# Thanks  <!-- .element: style="color: #FFF" -->
 
 <!-- NOTES -->
 - Homepage which has examples, documentation, blog
